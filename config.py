@@ -1,7 +1,7 @@
 DEBUG = True
 
 USERNAME = 'root'
-PASSWORD = 'Tjfanautico6.'
+PASSWORD = ''
 SERVER = 'localhost'
 DB = 'magpy'
 
