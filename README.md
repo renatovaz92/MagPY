@@ -36,26 +36,3 @@ GET /api/projects/titan { "name": "titan", "packages": [ {"name": "Django", "ver
 
 DELETE /api/projects/titan ⚠️ Sua solução deve usar a API pública do PyPI. Não use outro caminho pra buscar as informações necessárias
 
-Avaliação Num primeiro momento não olharemos o seu código. O projeto será testado de forma automatizada pra checar se implementa a API especificada acima.
-
-Você deve codificar seu projeto em Python e fazer deploy usando os recursos disponibilizados nos Frees Tiers da Heroku.
-
-Quando finalizar a implementação, adicione o usuário com e-mail jobs@instruct.com.br como colaborador do app publicado até o fim do prazo estipulado. Isso nos garante acesso ao endereço em que sua API está publicada, para seguir com os testes automatizados.
-
-⚠️ Você deve adicionar o usuário com e-mail jobs@instruct.com.br no app publicado no Heroku! Não é necessário adicionar acesso ao código fonte num repositório do GitHub. Nós executaremos dois conjuntos de testes na sua API:
-
-Testes básicos (abertos) Testes avançados (fechados) Se a API não passar nos testes básicos, faremos mais duas tentativas. Se mesmo assim ela não passar nos testes básicos nós encerramos os testes.
-
-Se a API passar nos testes básicos e não passar nos testes avançados, faremos mais duas tentativas. Se mesmo assim ela não passar nos testes avançados nós encerramos os testes.
-
-Se a API passar pelos testes avançados nós conferimos superficialmente o seu código para identificar problemas; no entanto você provavelmente já garantiu a sua participação na próxima etapa.
-
-Os testes básicos estão disponíveis neste repositório no arquivo tests-open.js. Use-os durante o desenvolvimento para avaliar se a sua API está correta. Como explicado acima, você não passará para a próxima etapa se a sua solução não atender todos os testes desse arquivo. Use os testes para guiar o desenvolvimento da solução.
-
-Você pode executar esses testes com o k6. Para instalar o k6 basta baixar o binário para o seu sistema operacional (Windows, Linux ou Mac).
-
-Para rodar os testes abertos, especifique a variável de ambiente "API_BASE" com o endereço base da API testada.
-
-Exemplo de aplicação rodando no localhost na porta 8080:
-
-k6 run -e API_BASE='http://localhost:8080/' tests-open.js
